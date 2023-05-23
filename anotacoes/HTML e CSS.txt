@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+Favicon:
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon>
+Chamar arquivo CSS EXTERNO:
+	<link rel="stylesheet" href="style.css"> nome de arquivo pode ser diferente DICA: Para criar arquivo novo utilizar CTRL e clicar no nome do arquivo.
+
+</head>
+<body>
+	<h1>Títulos</h1> ... <h6> </h6>
+	<p>Parágrafos</p>
+Listas:
+	Ordenadas:
+	<ol> ou <ol type="1 ou A ou a ou I ou i">
+		<li>Lista ordenada</li> (fechamento opcional)
+	</ol>
+	Não ordenadas:
+	<ul> ou <ul type="circle(padrão) ou disc ou square">
+		<li>Lista não ordenada</li>
+	</ul>
+
+Links: 
+	<p>
+	<a href="outrapagina" target="_self ou _blank" rel="next ou prev ou external">link<a/>
+	</p>
+Imagens:
+	<img src="arquivo ou link da imagem" alt="descrição da imagem"> #DICA: usar CTRL + Espaço
+
+	Imagens dinâmicas:
+	<picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível"> @"SEMPRE DO MAIOR EMBAIXO PARA O MAIOR EM CIMA"
+      </picture>
+	
+Áudio:
+	<audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    	<audio preload="metadata ou none ou auto" autoplay controls(aparece o player) loop(repetir sempre que acabar)>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+	Dentro da tag <audio>, adicionamos vários <source> com formatos diferentes do
+mesmo áudio. Coloque na parte de cima o seu formato favorito. Os demais só serão
+carregados caso o de cima falhe.
+Vídeos:
+	  <video width="300" controls>
+        	  <source src="midia/meu-video-30p.mp4.mp4" type="video/mp4">   
+	        <source src="midia/meu-video-30p.mkv.mkv" type="video/mp4">     
+      	  <source src="midia/meu-video-30p.webm.webm" type="video/webm">
+	        <source src="midia/meu-video-30p.ogv.ogv" type="video/ogg">
+        	  <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    	  </video>
+Vídeos externos (Youtube, Vimeo, etc...):
+	  <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> #DICA: COPIAR O CÓDIGO DO PRÓPRIO YOUTUBE NA ABA COMPARTILHAR
+		  
+</body>
+</html>	
+
+CSS: 
+
+@charset "UTF-8";
+Externo(arquivo style.css) ou interno dentro do <head> utilizar a tag <style>:
+
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    color: cor;
+    background-color: cor;
+}
+
+p {
+    text-align:justify; ou text-align: center; ou text-align: right; ou text-align: left
+}
+
+Inline: <p style="text-align: right"> CSS na linha </p>
+
